@@ -29,6 +29,7 @@ READ_LOOKUP = dict(zip(SAMPLES, zip(read1, read2)))
 ### ensure picard tmp dir exists ###
 
 Path(config.get("picard_tmp_dir", ".picard")).mkdir(parents=True, exist_ok=True)
+Path(config.get("local_tmp_dir", ".tmp")).mkdir(parents=True, exist_ok=True)
 
 ### index reference fasta file ###
 # TODO: Make this more robust (i.e. ext might be .fasta.gz, .fa, etc.)
@@ -172,5 +173,4 @@ rule all:
                 f"{config.results_dir}/collect_variant_calling_metrics/{{sample}}.variant_calling_summary_metrics",
             ],
             sample=SAMPLES
-        )
-         
+        ),

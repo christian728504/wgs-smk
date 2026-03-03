@@ -6,7 +6,6 @@ rule validate_sam_file:
         reference_fasta = config.input_files.reference_fasta,
     output:
         validation_report = f"{config.results_dir}/validate_sam_file/{{sample}}.validation_report",
-    # container: config.environments.default
     container: config.environments.default
     log: f"{config.log_dir}/validate_sam_file/{{sample}}.log"
     shell:

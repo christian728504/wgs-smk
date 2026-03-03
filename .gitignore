@@ -1,15 +1,15 @@
 # User-defined
+efficiency_report_*.csv
+workflow/rules/envs/
 MOHD_RESULTS/
-triage.d/
-.picard/
+prototyping/
 .snakemake/
-.test/
+triage.d/
 results/
+.picard/
+.test/
 logs/
 jobs/
-workflow/rules/envs/
-prototyping/
-__pycache__
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
