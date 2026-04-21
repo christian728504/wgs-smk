@@ -1,6 +1,6 @@
 rule split_interval_list:
     input:
-        interval_list = config.input_files.split_interval_list\
+        interval_list = config.input_files.split_interval_list,
         ref_fasta = config.input_files.reference_fasta,
     output:
         outdir = directory(f"{config.results_dir}/split_interval_list"),
