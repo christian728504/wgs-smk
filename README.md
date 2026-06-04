@@ -11,7 +11,7 @@ Here we present a [snakemake](https://github.com/snakemake/snakemake.git) pipeli
 
 ### Prerequisites
 
-This pipeline takes paired-end FASTQ files as input and produces analysis-ready gVCFs. The output gVCFs are suitable as input for the [joint-genotyping-smk]() pipeline for joint genotyping across multiple samples.
+This pipeline takes paired-end FASTQ files as input and produces analysis-ready gVCFs. The output gVCFs are suitable as input for the [joint-genotyping-smk](https://github.com/christian728504/joint-genotyping-smk.git) pipeline for joint genotyping across multiple samples.
 
 ### Dependencies
 

@@ -12,6 +12,8 @@ results/
 .test/
 logs/
 jobs/
+*.sif
+qc/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
